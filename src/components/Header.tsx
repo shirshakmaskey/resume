@@ -9,7 +9,7 @@ export default function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      const sections = ['about', 'experience', 'projects', 'research', 'education'];
+      const sections = ['about', 'experience', 'skills', 'projects', 'research', 'education'];
       
       const current = sections.find(section => {
         const element = document.getElementById(section);
@@ -38,9 +38,9 @@ export default function Header() {
       <div className="container header-content">
         <a href="#" className="logo">Shirshak Maskey</a>
         <nav className="nav-links">
-          {['about', 'experience', 'projects', 'research', 'education'].map((section) => (
+          {['about', 'experience', 'skills', 'projects', 'research', 'education'].map((section) => (
             <a 
-              key={section} 
+              key={section}  
               href={`#${section}`} 
               className={activeSection === section ? 'active' : ''}
               onClick={() => setActiveSection(section)}
