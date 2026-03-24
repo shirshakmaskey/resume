@@ -87,10 +87,30 @@
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding-top: 60px;
+    min-height: calc(100vh - 60px);
+  }
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .hero-description {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    padding: 0 10px;
   }
   .hero-actions {
     flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .hero-actions button {
+    width: 100%;
+    justify-content: center;
   }
 }

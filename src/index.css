@@ -60,12 +60,26 @@ a:hover {
   padding: 100px 0;
 }
 
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+
 .section-title {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 3rem;
   text-align: center;
   letter-spacing: -0.02em;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 button.primary {

@@ -44,3 +44,12 @@
   font-weight: 500;
   color: var(--accent);
 }
+
+@media (max-width: 768px) {
+  .education-card {
+    padding: 24px 20px;
+  }
+  .education-section {
+    padding-bottom: 60px;
+  }
+}
