@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# Shirshak Maskey - Software Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio repository! This project serves as a sleek, interactive single-page application built with **React**, **Vite**, **TypeScript**, and **Framer Motion** to elegantly showcase my professional experience, education, and research as a Language Agnostic Full Stack Developer.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+*(Insert your hosting URL here once deployed via Vercel/Amplify)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 👨‍💻 About Me
+**Shirshak Maskey**
+- **Location**: Sammamish, WA
+- **Email**: shirshak.maskey17@gmail.com
+- **Profiles**: [LinkedIn](https://www.linkedin.com/in/shirshakmaskey/) | [GitHub](https://github.com/shirshakmaskey) | [Google Scholar](https://scholar.google.com/citations?user=S5-VInMAAAAJ&hl=en&oi=ao)
 
-## React Compiler
+Versatile, results-driven, and language-agnostic Full Stack Developer with over 5 years of experience building robust, scalable, and high-performance web applications across diverse industries. Proven expertise in modernizing legacy systems, system architecture, and developing end-to-end solutions using technologies like JavaScript, PHP, AWS, SQL/NoSQL databases, etc.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 💼 Experience Highlight
+* **Full Stack Developer @ Kforce Inc. / HP** (Aug 2021 - Nov 2025)
+  * Led system design for a multi-billion dollar procurement platform migration to a modern web stack.
+  * Developed core microservices handling millions of users with sub-200ms latency.
+* **Research Assistant (Blockchain) @ University of Nevada, Reno** (Aug 2019 - May 2021)
+  * Specialized in blockchain security using AI, proposing novel solutions for node selection in Hyperledger Fabric.
+  * Published 3 peer-reviewed papers on improving the security of blockchain-based applications.
+* **Full Stack Engineer @ Cloudtoko B.V.** (Jun 2017 - Jul 2019)
+  * Designed a POS web app with workflow management, increasing organizational productivity by 30%.
+* **Full Stack Engineer @ Broadlink Communications Pvt. Ltd.** (Dec 2016 - May 2017)
+  * Developed internal tools for ticket and task management, improving efficiency by over 50%.
 
-## Expanding the ESLint configuration
+## 🎓 Education
+* **M.S. in Computer Science and Engineering** - University of Nevada, Reno (May 2021)
+* **B.E. in Electronics & Communication** - Tribhuwan University, Kathmandu (Oct 2016)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📜 Top Projects & Research
+* **fabric-mns**: Implementation and experiments on Hyperledger Fabric. Features custom node selection logic and Artificial Neural Networks.
+* **blockchain_multithread**: A multithreaded blockchain implementation focusing on performance, optimization, and concurrency.
+* **Google Scholar Research**: Over 90+ citations on published work covering vehicular edge computing and intelligent transportation systems.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🔧 Technologies Used
+- Frontend Framework: React + Vite
+- Language: TypeScript
+- Styling: Custom Vanilla CSS with Apple-inspired dark mode & Glassmorphism
+- Animations: Framer Motion
+- Icons: React Icons (FontAwesome)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🏃‍♂️ Running Locally
+To run this project on your local machine:
+```bash
+git clone https://github.com/shirshakmaskey/resume.git
+cd resume
+npm install
+npm run dev
 ```
